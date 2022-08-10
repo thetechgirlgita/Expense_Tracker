@@ -2,4 +2,17 @@
 
 A new Flutter mini application.
 
-In this application, Wwe can find the mixture of widgets between widgets.
+In this application, we can find the mixture of widgets between widgets.
+Like :
+'''
+Column(
+  children : [
+    Container(
+      child: Card(
+        child: Text("Hello"),
+      ),
+    ),
+  ],
+)
+'''
+
