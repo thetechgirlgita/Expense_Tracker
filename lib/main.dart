@@ -30,10 +30,18 @@ class _InitialScreenState extends State<InitialScreen> {
     return Scaffold(
 
       body: Column(
-        children:  const <Widget> [
-           Card(
-             elevation: 5,
-            child:  Text("Hello"),
+        children:   <Widget> [
+          Card(
+            elevation: 5,
+           child:  Container(
+             height: 50,
+             width: 100,
+             child: Align(
+               alignment: Alignment.center,
+               child:  Text("Gita"),
+             )
+
+           )
           ),
           Card(
             child: Text("World"),
