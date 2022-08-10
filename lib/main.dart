@@ -12,7 +12,7 @@ class ExpenseTracker extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: InitialScreen(),
+      home: const InitialScreen(),
     );
   }
 }
@@ -29,7 +29,17 @@ class _InitialScreenState extends State<InitialScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Text("Hello World"
+      body: Column(
+        children:  const <Widget> [
+           Card(
+             elevation: 5,
+            child:  Text("Hello"),
+          ),
+          Card(
+            child: Text("World"),
+                elevation : 5,
+          )
+        ],
       )
     );
   }
