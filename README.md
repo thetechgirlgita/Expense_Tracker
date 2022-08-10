@@ -15,4 +15,5 @@ Column(
   ],
 )
 ```
+Widgets and more widgets in every steps to create a new UI required Screen.
 
