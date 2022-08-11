@@ -36,14 +36,14 @@ class _InitialScreenState extends State<InitialScreen> {
            child:  Container(
              height: 50,
              width: 100,
-             child: Align(
+             child: const Align(
                alignment: Alignment.center,
                child:  Text("Gita"),
              )
 
            )
           ),
-          Card(
+          const Card(
             child: Text("World"),
                 elevation : 5,
           )
