@@ -35,8 +35,6 @@ final List<Transaction> transactions = [
     amount: 20,
     item: 'Kurkure',
     date: DateTime.now(),
-
-
   )
 ];
   @override
@@ -57,10 +55,38 @@ final List<Transaction> transactions = [
 
            )
           ),
-          const Card(
-            child: Text("World"),
-                elevation : 5,
-          )
+         Column(
+           children: transactions.map((tx){
+             return Card(
+                 elevation: 5,
+                 child: Row(
+                 children:[
+                   Container(
+                 height: 50,
+                 width: 100,
+                 child: Align(
+                   alignment: Alignment.center,
+                 child:  Text(tx.amount.toString()
+                 ),
+                 )
+                 ),
+                   Card(
+                     child:
+                   Container(
+                       height: 50,
+                       width: 100,
+                       child: Align(
+                         alignment: Alignment.center,
+                         child:  Text(tx.title.toString()
+                         ),
+                       )),
+                   ),
+               ]),
+             );
+
+           }).toList(),
+         ),
+
         ],
       )
     );
