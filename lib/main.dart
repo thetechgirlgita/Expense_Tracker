@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'transaction.dart';
+
+
 void main() {
   runApp(const ExpenseTracker());
 }
@@ -25,6 +28,17 @@ class InitialScreen extends StatefulWidget {
 }
 
 class _InitialScreenState extends State<InitialScreen> {
+
+final List<Transaction> transactions = [
+  Transaction(
+    title: 'Snacks',
+    amount: 20,
+    item: 'Kurkure',
+    date: DateTime.now(),
+
+
+  )
+];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
