@@ -69,6 +69,18 @@ final List<Transaction> transactions = [
                          ),
                        )),
                    ),
+                   Card(
+                     child:
+                     Container(
+                         height: 50,
+                         width: 100,
+                         child: Align(
+                           alignment: Alignment.center,
+                           child:  Text(tx.item ,
+                           ),
+                         )),
+                   ),
+
                ]),
              );
 
