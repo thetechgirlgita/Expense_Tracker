@@ -43,7 +43,7 @@ class _InitialScreenState extends State<InitialScreen> {
                         child: Text(tx.title.toString()),
                       )),
                 ),
-                /*Card(
+                Card(
               child: Container(
                 alignment: Alignment.center,
                       height: 50,
@@ -54,7 +54,7 @@ class _InitialScreenState extends State<InitialScreen> {
                           tx.item,
                         ),
                       )),
-                ),*/
+                ),
                 Card(
                   child: Text(
                     tx.date.toString(),
